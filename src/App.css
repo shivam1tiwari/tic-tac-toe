@@ -1,0 +1,65 @@
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+  width: 100%;
+  height: 100vh;
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:gray;
+  width: 40vw;
+  height: 40vh;
+  color: white;
+}
+.game-board{
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+}
+
+.board-button{
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(71, 70, 70);
+  border: 1px solid gray;
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+  font-size: 1.5rem;
+}
+.players{
+  display: flex;
+  gap: 2rem;
+  padding: .5rem 1rem;
+}
+
+.active{
+  border: 1px solid red ;
+ 
+}
+
+.head{
+  position: absolute;
+  display: flex;
+  background-color: rgb(195, 190, 190,.8);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  height: 40vh;
+  width: 40vw;
+  
+}
+
+.game-win{
+  display: none;
+}
